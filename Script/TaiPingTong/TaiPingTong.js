@@ -1,5 +1,5 @@
 const $ = new Env("太平通");
-let TaiPingTong = ($.isNode() ? process.env.TaiPingTong : $.getjson("TaiPingTong")) || $prefs.valueForKey("TaiPingTong");;
+let TaiPingTong = ($.isNode() ? process.env.TaiPingTong : $.getjson("TaiPingTong")) || $prefs.valueForKey("tpt");;
 !(async () => {
     if (typeof $request != "undefined") {
         await getCookie();
